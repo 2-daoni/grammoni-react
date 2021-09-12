@@ -1,11 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/pages/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Grammoni</h1>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path='/' />
+      </Switch>
+    </Router>
   );
 }
 
